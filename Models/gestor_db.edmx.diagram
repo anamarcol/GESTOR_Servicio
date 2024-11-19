@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="6e9c6c27e1344267adebc2a4d5164ea2" Name="Diagram1">
+        <EntityTypeShape EntityType="gestor_dbModel.carrito" Width="1.5" PointX="5.25" PointY="13.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="gestor_dbModel.categoria" Width="1.5" PointX="3" PointY="4" IsExpanded="true" />
+        <EntityTypeShape EntityType="gestor_dbModel.cliente" Width="1.5" PointX="3" PointY="12.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="gestor_dbModel.estado" Width="1.5" PointX="0.75" PointY="4.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="gestor_dbModel.informe" Width="1.5" PointX="7.75" PointY="7.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="gestor_dbModel.permiso" Width="1.5" PointX="1.5" PointY="18.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="gestor_dbModel.precio" Width="1.5" PointX="3" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="gestor_dbModel.producto" Width="1.5" PointX="5.25" PointY="3.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="gestor_dbModel.productos_carritos" Width="1.5" PointX="7.5" PointY="4.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="gestor_dbModel.productos_ventas" Width="1.5" PointX="7.5" PointY="1.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="gestor_dbModel.proveedore" Width="1.5" PointX="3" PointY="7.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="gestor_dbModel.role" Width="1.5" PointX="0.75" PointY="15.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="gestor_dbModel.usuario" Width="1.5" PointX="3" PointY="15.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="gestor_dbModel.venta" Width="1.5" PointX="5.25" PointY="9.5" IsExpanded="true" />
+        <AssociationConnector Association="gestor_dbModel.FK_carritos_clientes_id_cliente" ManuallyRouted="false" />
+        <AssociationConnector Association="gestor_dbModel.FK_carritos_usuarios_id_usuario" ManuallyRouted="false" />
+        <AssociationConnector Association="gestor_dbModel.FK_productos_carritos_carritos_id_carrito" ManuallyRouted="false" />
+        <AssociationConnector Association="gestor_dbModel.FK_categorias_estados_id_estado" ManuallyRouted="false" />
+        <AssociationConnector Association="gestor_dbModel.FK_productos_categorias_id_categoria" ManuallyRouted="false" />
+        <AssociationConnector Association="gestor_dbModel.FK_roles_permisos_id_permiso" ManuallyRouted="false" />
+        <AssociationConnector Association="gestor_dbModel.FK_productos_precios_id_precio" ManuallyRouted="false" />
+        <AssociationConnector Association="gestor_dbModel.FK_productos_carritos_productos_id_producto" ManuallyRouted="false" />
+        <AssociationConnector Association="gestor_dbModel.FK_productos_proveedores_id_proveedor" ManuallyRouted="false" />
+        <AssociationConnector Association="gestor_dbModel.FK_productos_ventas_productos_id_producto" ManuallyRouted="false" />
+        <AssociationConnector Association="gestor_dbModel.FK_productos_ventas_venta_id_venta" ManuallyRouted="false" />
+        <AssociationConnector Association="gestor_dbModel.FK_usuarios_rol_id_rol" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
