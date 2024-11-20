@@ -39,7 +39,7 @@ namespace GESTOR_SERVICIO.class
                 return false;
             }
         }
-        public IQueryable<loginRespuesta> Consultar()
+        public IQueryable<loginRespuesta> Ingresar()
         {
              if (ValidarUsuario())
             {
