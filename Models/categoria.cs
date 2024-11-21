@@ -9,9 +9,11 @@
 
 namespace GESTOR_SERVICIO.Models
 {
+    using Newtonsoft.Json;
     using System;
     using System.Collections.Generic;
-    
+    using System.Web.Helpers;
+
     public partial class categoria
     {
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
@@ -25,9 +27,13 @@ namespace GESTOR_SERVICIO.Models
         public string descripcion { get; set; }
         public Nullable<int> id_estado { get; set; }
         public Nullable<System.DateTime> fecha_creacion { get; set; }
-    
+
+        [JsonIgnore]
         public virtual estado estado { get; set; }
+        
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+
+        
         public virtual ICollection<producto> productos { get; set; }
     }
 }

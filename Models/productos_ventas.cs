@@ -9,14 +9,18 @@
 
 namespace GESTOR_SERVICIO.Models
 {
+    using Newtonsoft.Json;
     using System;
     using System.Collections.Generic;
     
     public partial class productos_ventas
     {
         public int id_producto_ventas { get; set; }
+        [JsonIgnore]
         public Nullable<int> id_venta { get; set; }
+        [JsonIgnore]
         public Nullable<int> id_producto { get; set; }
+        [JsonIgnore]
         public Nullable<long> cantidad { get; set; }
     
         public virtual producto producto { get; set; }

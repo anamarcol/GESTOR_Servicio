@@ -9,6 +9,7 @@
 
 namespace GESTOR_SERVICIO.Models
 {
+    using Newtonsoft.Json;
     using System;
     using System.Collections.Generic;
     
@@ -27,8 +28,11 @@ namespace GESTOR_SERVICIO.Models
         public Nullable<long> subtotal_carrito { get; set; }
     
         public virtual cliente cliente { get; set; }
+        [JsonIgnore]
         public virtual usuario usuario { get; set; }
+        [JsonIgnore]
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        
         public virtual ICollection<productos_carritos> productos_carritos { get; set; }
     }
 }

@@ -9,6 +9,7 @@
 
 namespace GESTOR_SERVICIO.Models
 {
+    using Newtonsoft.Json;
     using System;
     using System.Collections.Generic;
     
@@ -26,16 +27,24 @@ namespace GESTOR_SERVICIO.Models
         public string caracteristicas_producto { get; set; }
         public Nullable<long> stock { get; set; }
         public string descripcion { get; set; }
+        [JsonIgnore]
         public Nullable<int> id_precio { get; set; }
+        [JsonIgnore]
         public Nullable<int> id_categoria { get; set; }
+        [JsonIgnore]
         public Nullable<int> id_proveedor { get; set; }
-    
+        [JsonIgnore]
         public virtual categoria categoria { get; set; }
+        [JsonIgnore]
         public virtual precio precio { get; set; }
+        [JsonIgnore]
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<productos_carritos> productos_carritos { get; set; }
+        [JsonIgnore]
         public virtual proveedore proveedore { get; set; }
+        [JsonIgnore]
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        
         public virtual ICollection<productos_ventas> productos_ventas { get; set; }
     }
 }
