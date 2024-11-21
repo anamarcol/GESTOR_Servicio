@@ -1,4 +1,4 @@
-using GESTOR_SERVICIO.class;
+using GESTOR_SERVICIO.Clases;
 using GESTOR_SERVICIO.Models;
 using System;
 using System.Collections.Generic;
@@ -8,9 +8,9 @@ using System.Net.Http;
 using System.Web.Http;
 using System.Web.Http.Cors;
 
-namespace Servicios_6_8.Controllers
+namespace GESTOR_SERVICIO.Controllers
 {
-    [EnableCors(origins: "https://localhost:44387", headers: "*", methods: "*")]
+    [EnableCors(origins: "https://localhost:58412", headers: "*", methods: "*")]
     [RoutePrefix("api/Login")]
     [AllowAnonymous]
     public class LoginController : ApiController
