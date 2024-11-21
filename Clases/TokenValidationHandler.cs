@@ -9,7 +9,7 @@ using System.Threading;
 using System.Web;
 using Microsoft.IdentityModel.Tokens;
 
-namespace GESTOR_SERVICIO.class
+namespace GESTOR_SERVICIO.Clases
 {
     public class TokenValidationHandler : DelegatingHandler
     {
