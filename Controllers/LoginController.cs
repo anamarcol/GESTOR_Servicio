@@ -19,7 +19,7 @@ namespace GESTOR_SERVICIO.Controllers
         [Route("Ingresar")]
         public IQueryable<LoginRespuesta> Ingresar([FromBody] Login login)
         {
-            clsLogin _login = new clsLogin();
+             clsLogin _login = new clsLogin();
             _login.login = login;
             return _login.Ingresar();
         }
