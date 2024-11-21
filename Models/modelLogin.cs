@@ -1,9 +1,9 @@
 using System;
 using System.Collections.Generic;
-using.Linq;
-using System.web;
+using System.Linq;
+using System.Web;
 
-namespace GESTOR_SERVICIO.class
+namespace GESTOR_SERVICIO.Clases
 {
     public class Login
     {
